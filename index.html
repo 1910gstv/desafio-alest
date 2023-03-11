@@ -20,15 +20,15 @@
   <body>
 
 
-    <header>
-        <nav class="navbar navbar-expand-md fixed-top">
+    <header class="pb-4">
+        <nav class="navbar navbar-expand-md ">
             <div class="container-fluid">
 
                 <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
                     <i class="fa-sharp fa-solid fa-bars"></i>
                 </button>
 
-                <div class="collapse navbar-collapse" id="nav-principal">
+                <div class="collapse navbar-collapse pl-5 pr-5" id="nav-principal">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item dropdown ml-3 mr-3">
                             <div class="dropdown">
@@ -72,7 +72,57 @@
 
     <!--Area de conteudos-->
    
-    <section id="home" class="d-flex">
+    <section id="home"  class="d-flex">
+
+        <div class="container-fluid align-self-center">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row justify-content-center">
+                        <div class="col-md-3 col-sm-5 card-responsive">
+                            <div class="card border-0">
+                                <img src="" alt="">
+                                <div class="card-body">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-5 card-responsive">
+                            <div class="card border-0">
+                                <img src="" alt="">
+                                <div class="card-body">
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-5 card-responsive">
+                            <div class="card border-0">
+                                <img src="" alt="">
+                                <div class="card-body">
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-5 card-responsive">
+                            <div class="card border-0">
+                                <img src="https://imgnike-a.akamaihd.net/250x250/02313251.jpg" 
+                                alt="camisa-croacia" class="img-fluid">
+                                <div class="card-body">
+                                    <h5>Camisa Nike Croácia I 2022/23 Torcedor Pro Masculina</h5>
+                                    </a>
+                                    <p class="text-muted mt-1 mb-1">Futebol</p>
+                                    <p class="text-muted text-decoration-line-through">R$ 299,99</p>
+                                    <p>R$ 219,99</p>
+                                    <button type="button" class="btn btn-light btn-app">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </section>
 
@@ -94,5 +144,29 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyC1g1VtpY-WFHFoluq7D-0c81RftrlhoS4",
+          authDomain: "desafio-alest-5ccd7.firebaseapp.com",
+          projectId: "desafio-alest-5ccd7",
+          storageBucket: "desafio-alest-5ccd7.appspot.com",
+          messagingSenderId: "446893106884",
+          appId: "1:446893106884:web:d393cba377c68fadcbcb91",
+          measurementId: "G-DBSTS33SXN"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+    <script src="app.js"></script>
   </body>
 </html>
